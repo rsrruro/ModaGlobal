@@ -20,6 +20,25 @@
             <img id="img1" src="images/image1.jpg" alt="Secció Levis" class="miniatura">
             <img id="img2" src="images/image2.jpg" alt="Secció sport" class="miniatura">
         </div>
+
+        <form id="contactoForm" action="/submit-form" method="POST">
+            <div>
+                <label for="nom">Nom:</label><br>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+            <div>
+                <label for="email">Correu Electrónic:</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="missatge">Missatge:</label><br>
+                <textarea id="missatge" name="missatge" rows="5" required></textarea>
+            </div>
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+        <script src="js/contacte.js"></script>
         <script src="js/galeria.js"></script>
     </body>
 </html>
